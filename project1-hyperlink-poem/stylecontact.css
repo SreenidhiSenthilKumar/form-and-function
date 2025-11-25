@@ -1,0 +1,31 @@
+h1 {
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  font-size: 45px;
+}
+
+.dots {
+  text-align: center;
+}
+
+body {
+  background: rgb(255, 250, 227);
+}
+
+
+.changecolour {
+  animation: colorChange 2s infinite;
+  font-weight: 1000;
+}
+
+@keyframes colorChange {
+
+  0% { color: #894d20; }
+  33% { color: #5d6b28; }
+  66% { color: #495b6b; }
+  100% { color: #894d20; }
+}
+
+
