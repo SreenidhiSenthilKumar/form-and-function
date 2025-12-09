@@ -1,8 +1,11 @@
 
 body {
     background-color:var(--background);
-    cursor: url('cursor-64.png') 32 32, auto;
+    cursor: url('cursor-64.png') 32 32, auto ;
   
+}
+*{
+    cursor: url('cursor-64.png') 32 32, auto ;
 }
 
 h1 {
