@@ -1,6 +1,18 @@
 :root {
-    --background-color: #f0e6f6;
-    --nav-color: #c39bd3;
-    --text-color: #333333;
-    --font-family: 'Space Mono', monospace;
+   
+    --bodytext: 'Space Mono', monospace;
+    --headingtext: 'Anton', sans-serif;
+    
+
+
+    --background: #F4EDE3;
+    --blue: #4A7890;
+    --green: #697836;
+    --darkgreen: #2A3225;
+    --organge: #D75E1B;
+    --brown : #341C11;
+    --lightbrown: #8B4512;
 }
+
+
+

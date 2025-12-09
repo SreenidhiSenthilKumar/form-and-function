@@ -1,21 +1,13 @@
-:root{
-    --font: "Roboto Mono", sans-serif;
-    --font-condensed: "Roboto Condensed", sans-serif;
-    --font-size-regular: 20px;
-    --font-size-large: 40px;
-    --bg-color: rgb(18, 18, 18);
-    --fg-color: rgb(208, 205, 205);
-    --small-space: 15px;
-    --medium-space: 25px;
-    --large-space: 100px;
-}
+
 body {
-    background-color: #8B4512;
+    background-color:var(--background);
+    cursor: url('cursor-64.png') 32 32, auto;
+  
 }
 
 h1 {
     font-family: "Space Mono", monospace;
-    color: #E4DCC8;
+   color: var(--brown);
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -30,6 +22,25 @@ h1 {
 
 }
 
+#typewriter{
+    white-space: pre-wrap; 
+    display: inline-block;
+    max-width: 80%;
+    vertical-align: middle;
+}
+
+#typewriter::after{
+    content: '|';
+    display: inline-block;
+    margin-left: 6px;
+    color: var(--brown);
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink{
+    50% { opacity: 0; }
+}
+
 
 a {
     text-decoration: none;
@@ -42,10 +53,45 @@ a {
 
 }
 
-.navi {
+.home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+.home img{
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+.nav{
     display:flex;
-    justify-content: space-between;
- }
+    
+    
+}
+
+.guides{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    z-index: 999; 
+}
+
+.guide{
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--brown);
+
+    text-decoration: none;
+}
+
 
 
  
@@ -61,15 +107,19 @@ a {
     
     h1 {
     font-family: "Space Mono", monospace;
-    color: #E4DCC8;
+    color: var(--brown);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-    margin: 11%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: left;
+    margin: 0;
+    z-index: 10;
     }
 
  }

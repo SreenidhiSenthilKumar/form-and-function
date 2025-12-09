@@ -1,11 +1,15 @@
  body {
-     background-color: rgb(228, 219, 200);
+     background-color: var(--background);
      display: flex;
      justify-content: center;
      align-items: center;
      min-height: 100vh;
      margin: 0;
+    cursor: url('cursor-64.png') 32 32, auto;
+
  }
+
+ 
 
  .container {
      width: 90%;
@@ -13,7 +17,7 @@
      font-size: 25vw;
      text-transform: uppercase;
      text-align: center;
-     color: rgb(42, 50, 37);
+     color: var(--brown);
      letter-spacing: -0.05em;
      line-height: 0.8;
  }
@@ -69,7 +73,7 @@
 
  .begin a:hover,
  .begin a:active {
-     background-color: rgb(42, 50, 37);
+     background-color: var(--brown);
      color: rgb(254, 251, 230);
  }
 
@@ -83,4 +87,5 @@
   z-index: 0;
  }
 
+ 
  
