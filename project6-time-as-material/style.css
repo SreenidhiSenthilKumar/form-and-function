@@ -4,11 +4,14 @@ body {
 }
 
 .heading {
-    font-family: 'Anton', sans-serif;
+     font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
     font-size: 70px;
     position: absolute;
     top: 0;
     text-align: margin-left;
+    color: var(--brown);
 
 }
 
@@ -19,10 +22,11 @@ body {
     text-align: margin-left;
     position: absolute;
     align-items: center;
-    top: 28vh;
+    top: 25vh;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.052vw;
+    color: var(--brown);
 }
 
 h1 span{
@@ -39,14 +43,57 @@ h1 span:hover{
 }
 
 img {
-    width: 25%;
-    animation: shapes;
-    animation-duration: 5s; 
-    animation-timing-function: ease-in-out; 
-    animation-iteration-count: infinite; 
-    animation-fill-mode: forwards;
-
+  width: 25%;
 }
+
+
+.shapes img {
+  animation-name: shapes;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+.home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+.home img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    animation: none;
+}
+.nav{
+    display:flex;
+    
+    
+}
+
+.guides{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    z-index: 999; 
+}
+
+.guide{
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--brown);
+
+    text-decoration: none;
+}
+
 
 @keyframes shapes {
   0% {
@@ -142,6 +189,13 @@ img {
 
 
 }
+
+#shape5 img { animation-delay: 0s;   animation-duration: 6.2s; }
+#shape6 img { animation-delay: 1s;   animation-duration: 5.4s; }
+#shape7 img { animation-delay: 2.2s; animation-duration: 7s;   }
+#shape10 img{ animation-delay: 0.6s; animation-duration: 6.6s; }
+#shape11 img{ animation-delay: 1.6s; animation-duration: 5.8s; }
+#shape12 img{ animation-delay: 2.8s; animation-duration: 6.4s; }
 
 
 
@@ -271,4 +325,3 @@ img {
 
 }
 }
-
